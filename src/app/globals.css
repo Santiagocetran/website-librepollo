@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #2d7a2d;
+  --primary-dark: #1d4d1d;
+  --primary-light: #4CAF50;
+  --accent: #8BC34A;
+  --earth: #795548;
+  --bg: #f8faf5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: #1a1a1a;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+@layer components {
+  .prose-custom h2 {
+    @apply text-2xl font-bold text-green-700 mt-8 mb-4 border-b-2 border-green-200 pb-2;
+  }
+  .prose-custom h3 {
+    @apply text-xl font-semibold text-green-600 mt-6 mb-3;
+  }
+  .prose-custom h4 {
+    @apply text-lg font-semibold text-gray-700 mt-4 mb-2;
+  }
+  .prose-custom p {
+    @apply text-gray-700 leading-relaxed mb-4;
+  }
+  .prose-custom ul {
+    @apply list-disc list-inside space-y-1 mb-4 text-gray-700;
+  }
+  .prose-custom ol {
+    @apply list-decimal list-inside space-y-1 mb-4 text-gray-700;
+  }
+  .prose-custom li {
+    @apply text-gray-700;
+  }
+  .prose-custom strong {
+    @apply text-gray-900 font-semibold;
+  }
+  .prose-custom a {
+    @apply text-green-600 hover:text-green-800 underline;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-green-100 overflow-hidden;
+  }
+  .btn-primary {
+    @apply bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 transition-colors;
+  }
+  .btn-secondary {
+    @apply bg-white text-green-700 px-6 py-3 rounded-xl font-semibold border-2 border-green-200 hover:border-green-400 hover:bg-green-50 transition-colors;
+  }
+  .section-title {
+    @apply text-3xl font-bold text-green-800 mb-2;
+  }
+  .section-subtitle {
+    @apply text-gray-500 text-lg mb-8;
+  }
+  .tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700;
+  }
+}
