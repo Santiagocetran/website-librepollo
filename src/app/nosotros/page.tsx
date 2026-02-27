@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Users, Shield, HeartHandshake, ExternalLink, Newspaper, Play, BookOpen } from 'lucide-react';
+import { HeartHandshake, ExternalLink, Newspaper, Play, BookOpen } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Sobre el Proyecto – LibreIncu',
@@ -106,53 +106,60 @@ export default function NosotrosPage() {
       <section className="bg-lp-black text-lp-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <span className="tag bg-lp-yellow text-lp-black mb-4 inline-block">Sobre el Proyecto</span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold mb-6">Nuestra Misión</h1>
-          <p className="text-xl text-lp-gray leading-relaxed">
-            Construir herramientas libres para devolver la autonomía a las familias productoras,
-            rompiendo el cerco tecnológico impuesto por los oligopolios corporativos.
+          <h1 className="text-4xl sm:text-5xl font-extrabold mb-6">LibreIncu</h1>
+          <p className="text-xl text-lp-gray leading-relaxed max-w-3xl mx-auto">
+            Una iniciativa de soberanía tecnológica y alimentaria desarrollada colaborativamente por{' '}
+            <a href="https://altermundi.net" target="_blank" rel="noopener noreferrer" className="text-lp-yellow font-bold hover:underline">AlterMundi</a>{' '}
+            y la{' '}
+            <Link href="/cto" className="text-lp-yellow font-bold hover:underline">Comunidad, Trabajo y Organización (CTO)</Link>,
+            junto con diversas organizaciones de la Agricultura Familiar, Campesina e Indígena (AFCI) de la provincia de Córdoba, Argentina.
           </p>
         </div>
       </section>
 
-      {/* Origin */}
-      <section className="py-16 px-4 max-w-4xl mx-auto prose-custom">
-        <h2>Un esfuerzo colectivo</h2>
-        <p>
-          El proyecto <strong>LibreIncu</strong> nace de la articulación comunitaria entre{' '}
-          <a href="https://altermundi.net" target="_blank" rel="noopener noreferrer" className="font-bold underline underline-offset-2 hover:text-lp-yellowDark transition-colors">AlterMundi</a>,
-          la{' '}
-          <Link href="/cto" className="font-bold underline underline-offset-2 hover:text-lp-yellowDark transition-colors">Comunidad, Trabajo y Organización (CTO)</Link>{' '}
-          y diversas familias de la Agricultura Familiar, Campesina e Indígena (AFCI) en Córdoba, Argentina.
-        </p>
-        <p>
-          Entendemos que la tecnología no es neutral. Las herramientas de producción que utilizamos hoy en día están diseñadas
-          bajo lógicas de dependencia y extracción de valor. Frente a esto, nos proponemos desarrollar nuestro propio
-          ecosistema técnico: abierto, reparable, económico y apropiable por las propias bases campesinas.
+      {/* Triple Dependencia */}
+      <section className="py-16 px-4 max-w-4xl mx-auto">
+        <p className="text-lp-grayDark leading-relaxed text-lg mb-12">
+          El proyecto busca romper la <strong className="text-lp-black">triple dependencia</strong> que enfrenta la AFCI en la producción avícola:
         </p>
 
-        <div className="my-12 grid sm:grid-cols-2 gap-6 not-prose">
-          <div className="card p-6 border-lp-yellowLight border-2">
-            <Users className="text-lp-yellow mb-4" size={32} />
-            <h3 className="text-xl font-bold mb-2">Comunidad</h3>
-            <p className="text-lp-grayDark text-sm">
-              Diseñamos con y para las familias productoras. Los saberes técnicos se combinan con el saber ancestral del territorio.
-            </p>
+        <div className="space-y-6 mb-14">
+          <div className="card p-6 border-l-4 border-lp-yellow flex gap-5 items-start">
+            <div className="bg-lp-yellow text-lp-black font-extrabold rounded-full w-10 h-10 flex items-center justify-center shrink-0 text-lg">1</div>
+            <div>
+              <h3 className="font-extrabold text-lp-black text-lg mb-1">Dependencia genética</h3>
+              <p className="text-lp-grayDark">
+                El &quot;pollito bebé híbrido&quot; utilizado tanto en la industria como por pequeños productores proviene de un oligopolio mundial (<strong>Cobb-Vantress</strong> y <strong>Aviagem</strong>), que controlan la genética de todos los pollos industriales.
+              </p>
+            </div>
           </div>
-          <div className="card p-6 border-lp-yellowLight border-2">
-            <Shield className="text-lp-yellow mb-4" size={32} />
-            <h3 className="text-xl font-bold mb-2">Soberanía</h3>
-            <p className="text-lp-grayDark text-sm">
-              El objetivo último: que las comunidades ya no pongan su supervivencia productiva en manos de corporaciones.
-            </p>
+
+          <div className="card p-6 border-l-4 border-lp-yellow flex gap-5 items-start">
+            <div className="bg-lp-yellow text-lp-black font-extrabold rounded-full w-10 h-10 flex items-center justify-center shrink-0 text-lg">2</div>
+            <div>
+              <h3 className="font-extrabold text-lp-black text-lg mb-1">Dependencia alimentaria</h3>
+              <p className="text-lp-grayDark">
+                La dieta de estos pollos requiere precursores de crecimiento, núcleos vitamínicos y minerales de origen industrial, además de maíz y soja del modelo del agronegocio.
+              </p>
+            </div>
+          </div>
+
+          <div className="card p-6 border-l-4 border-lp-yellow flex gap-5 items-start">
+            <div className="bg-lp-yellow text-lp-black font-extrabold rounded-full w-10 h-10 flex items-center justify-center shrink-0 text-lg">3</div>
+            <div>
+              <h3 className="font-extrabold text-lp-black text-lg mb-1">Dependencia tecnológica</h3>
+              <p className="text-lp-grayDark">
+                Las incubadoras comerciales son inaccesibles por su costo o están diseñadas para hobbistas, no para producción familiar.
+              </p>
+            </div>
           </div>
         </div>
 
-        <h2>La Cuña Operativa</h2>
-        <p>
-          LibreIncu y LibreIncu actúan como una "cuña" en la cadena agroindustrial. Al resolver el primer y más difícil
-          paso de la producción avícola (la incubación artificial de alta eficiencia), habilitamos la recuperación de
-          líneas genéticas propias y rompemos con el modelo de compra constante del "pollito bebé industrial".
-        </p>
+        <div className="bg-lp-black text-lp-white rounded-2xl p-8">
+          <p className="text-lp-gray leading-relaxed text-lg">
+            Como respuesta a este problema, <strong className="text-lp-yellow">LibreIncu</strong> presenta una incubadora avícola con tecnología de monitoreo y control en línea, diseñada específicamente para las necesidades de la AFCI, permitiendo la recuperación del <em>&quot;saber ancestral&quot;</em> y el desarrollo de genética propia para la transición hacia un modelo agroecológico integral.
+          </p>
+        </div>
       </section>
 
       {/* Press & Media */}
