@@ -2,6 +2,9 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
+  // basePath sirve si vas a hostear en /website usando GitHub Pages por defecto.
+  // Si usas un dominio propio (ej: midominio.com), déjalo comentado o vacío.
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
   images: {
     unoptimized: true,
     remotePatterns: [
