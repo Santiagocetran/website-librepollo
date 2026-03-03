@@ -1,0 +1,21 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[185],{6422:function(e,t,r){Promise.resolve().then(r.t.bind(r,231,23)),Promise.resolve().then(r.t.bind(r,3054,23)),Promise.resolve().then(r.bind(r,9632))},8030:function(e,t,r){"use strict";r.d(t,{Z:function(){return i}});var l=r(2265);/**
+ * @license lucide-react v0.400.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let n=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),a=function(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];return t.filter((e,t,r)=>!!e&&r.indexOf(e)===t).join(" ")};/**
+ * @license lucide-react v0.400.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var s={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
+ * @license lucide-react v0.400.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let o=(0,l.forwardRef)((e,t)=>{let{color:r="currentColor",size:n=24,strokeWidth:o=2,absoluteStrokeWidth:i,className:c="",children:h,iconNode:d,...x}=e;return(0,l.createElement)("svg",{ref:t,...s,width:n,height:n,stroke:r,strokeWidth:i?24*Number(o)/Number(n):o,className:a("lucide",c),...x},[...d.map(e=>{let[t,r]=e;return(0,l.createElement)(t,r)}),...Array.isArray(h)?h:[h]])}),i=(e,t)=>{let r=(0,l.forwardRef)((r,s)=>{let{className:i,...c}=r;return(0,l.createElement)(o,{ref:s,iconNode:t,className:a("lucide-".concat(n(e)),i),...c})});return r.displayName="".concat(e),r}},9632:function(e,t,r){"use strict";r.d(t,{default:function(){return p}});var l=r(7437),n=r(231),a=r.n(n),s=r(1169),o=r(2265),i=r(8030);/**
+ * @license lucide-react v0.400.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let c=(0,i.Z)("Egg",[["path",{d:"M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z",key:"1c39pg"}]]),h=(0,i.Z)("X",[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]]),d=(0,i.Z)("Menu",[["line",{x1:"4",x2:"20",y1:"12",y2:"12",key:"1e0a9i"}],["line",{x1:"4",x2:"20",y1:"6",y2:"6",key:"1owob3"}],["line",{x1:"4",x2:"20",y1:"18",y2:"18",key:"yk5zj1"}]]),x=[{href:"/",label:"Inicio"},{href:"/nosotros",label:"Sobre el Proyecto"},{href:"/impacto",label:"Avances"},{href:"/contacto",label:"Contacto"}];function p(){let e=(0,s.usePathname)(),[t,r]=(0,o.useState)(!1);return(0,l.jsxs)("nav",{className:"sticky top-0 z-50 bg-white border-b border-green-100 shadow-sm",children:[(0,l.jsx)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:(0,l.jsxs)("div",{className:"flex items-center justify-between h-16",children:[(0,l.jsxs)(a(),{href:"/",className:"flex items-center gap-2 group",children:[(0,l.jsx)("div",{className:"bg-lp-yellow text-lp-black rounded-lg p-1.5 group-hover:bg-lp-yellowLight transition-colors",children:(0,l.jsx)(c,{size:20})}),(0,l.jsx)("span",{className:"text-lg font-bold text-lp-black",children:"LibreIncu"})]}),(0,l.jsx)("div",{className:"hidden lg:flex items-center gap-1",children:x.map(t=>(0,l.jsx)(a(),{href:t.href,className:"px-3 py-2 rounded-lg text-sm font-medium transition-colors ".concat(e===t.href?"bg-lp-gray text-lp-black":"text-lp-grayDark hover:text-lp-black hover:bg-lp-white"),children:t.label},t.href))}),(0,l.jsx)("button",{className:"lg:hidden p-2 rounded-lg text-lp-grayDark hover:text-lp-black hover:bg-lp-white transition-colors",onClick:()=>r(!t),children:t?(0,l.jsx)(h,{size:24}):(0,l.jsx)(d,{size:24})})]})}),t&&(0,l.jsx)("div",{className:"lg:hidden bg-white border-t border-lp-gray py-2",children:(0,l.jsx)("div",{className:"max-w-7xl mx-auto px-4 space-y-1",children:x.map(t=>(0,l.jsx)(a(),{href:t.href,onClick:()=>r(!1),className:"block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ".concat(e===t.href?"bg-lp-gray text-lp-black":"text-lp-grayDark hover:text-lp-black hover:bg-lp-white"),children:t.label},t.href))})})]})}},3054:function(){}},function(e){e.O(0,[141,231,971,23,744],function(){return e(e.s=6422)}),_N_E=e.O()}]);
